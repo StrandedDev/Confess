@@ -1,0 +1,117 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+/*
+*
+*  Made with 🖤 
+*
+*/
+
+     *{
+         border: none;
+         outline: none;
+         -webkit-box-sizing: border-box;
+                 box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+     }
+    
+     .container{
+         height: 100dvh;
+         width: 100dvw;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-align: center;
+             -ms-flex-align: center;
+                 align-items: center;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+         gap: 30px;
+     }
+     
+     .text{
+         font-family: 'patrick hand';
+         font-size: 2.3rem;         
+     }
+     
+     .btn{
+         padding: 5px 25px; 
+         background: cyan;
+         outline: none;
+         border: none;
+         border-radius: 5px;
+         -webkit-box-shadow: 0 3px 3px rgba(0,0,0,.2);
+                 box-shadow: 0 3px 3px rgba(0,0,0,.2);
+         margin: 10px;
+         font-size: 1.2rem;
+         font-family: 'hind siliguri';      
+         color: #fff;        
+         position: absolute;
+         top: 70%;         
+         -webkit-transform: translateX(-65%);         
+             -ms-transform: translateX(-65%);         
+                 transform: translateX(-65%)      
+     }
+     
+     #btn-yes{
+         left: 35%;
+         background: #f2895c;         
+     }
+     
+     #btn-no{
+         left: 65%;
+         background: #ff808a
+     }
+     
+     .btn:active{
+         -webkit-animation: click 0.1s linear;
+                 animation: click 0.1s linear;
+     }
+         
+     
+     @-webkit-keyframes click{
+         0%{-webkit-transform:translate(-65%, 0);transform:translate(-65%, 0); -webkit-box-shadow: inherite; box-shadow: inherite;}
+         50%{-webkit-transform:translate(-65%, 5px);transform:translate(-65%, 5px); -webkit-box-shadow: none; box-shadow: none;}
+         100%{-webkit-transform: translate(-65%, 0);transform: translate(-65%, 0); -webkit-box-shadow: inherit; box-shadow: inherit;}
+     }
+         
+     
+     @keyframes click{
+         0%{-webkit-transform:translate(-65%, 0);transform:translate(-65%, 0); -webkit-box-shadow: inherite; box-shadow: inherite;}
+         50%{-webkit-transform:translate(-65%, 5px);transform:translate(-65%, 5px); -webkit-box-shadow: none; box-shadow: none;}
+         100%{-webkit-transform: translate(-65%, 0);transform: translate(-65%, 0); -webkit-box-shadow: inherit; box-shadow: inherit;}
+     }
+     
+     
+     .accepted{
+         height: 100dvh;
+         width: 100dvw;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-align: center;
+             -ms-flex-align: center;
+                 align-items: center;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+         gap: 30px;
+         display: none;
+     }
+     
+     

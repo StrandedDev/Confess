@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+   <!-- Stylesheets -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+   <link rel="stylesheet" href="./css/styles.css">
+
+   <title>Confession</title>
+</head>
+<body>
+
+<div id="container" class="container">
+   <div>
+      <img src="./img/asking.gif" alt="Asking for love" width="150"></img>
+   </div>
+   <div>
+       <p class="text">Do you love me ?</p>
+   </div>  
+   <div>
+       <button class="btn" id="btn-yes" onclick="accepted()">Yes</button>
+       <button class="btn" id="btn-no" onclick="changeBtnPosition()">No</button>
+   </div>
+</div>
+
+
+
+<div id="accepted" class="accepted">
+    <div>
+        <img src="./img/accepted.gif" alt="accepted my love" width="150"></img>
+    </div>
+    <div>
+        <p class="text">
+            I love you too baby
+        </p>
+    </div>
+</div>
+
+
+  <!-- JavaScript -->
+  <script>
+
+/* DOM element */
+
+ const btn = document.getElementById("btn-no");
+ const container = document.getElementById("container");
+ const accepted_container = document.getElementById("accepted");
+ 
+ 
+/* function to move around button*/    
+      function changeBtnPosition(){
+        let x, y;
+        
+        y = Math.floor(Math.random() * 80) + 10;
+        x = Math.floor(Math.random() * 60) + 10;
+
+       if(y>=65 && y<= 80){
+            y = Math.floor(Math.random() * 80) + 10;
+          btn.style.top = y + "%";
+        }
+        else{
+           btn.style.top = y + "%";
+         }
+                
+        if(x>=35 && x<=55){       
+          x = Math.floor(Math.random() * 60) + 10;    
+          btn.style.left = x + "%";
+        }
+        else{
+        btn.style.left = x + "%";
+          }
+       
+    };
+
+
+
+
+
+/* Function to show result */
+
+     function accepted(){
+         container.style.display = "none";
+         accepted_container.style.display = "flex";
+     }
+      
+  </script>
+  
+</body>
+</html>
